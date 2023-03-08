@@ -1,0 +1,56 @@
+.match-area-before{
+    display: grid;
+    grid-template-areas: 'header-left header-right'
+                        'my-pick house-pick';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5rem 1fr;
+    height: max-content;
+    align-items: center;
+    width: 60%;
+    column-gap: 11rem;
+    row-gap: 6rem;
+    margin-top: -3rem;
+    margin: 0rem auto;
+}
+.match-area-before h2:nth-of-type(1){
+    grid-area: header-left;
+    color: white;
+    justify-self: end;
+    margin-right: 6rem;
+}
+.match-area-before h2:nth-of-type(2){
+    grid-area: header-right;
+    color: white;
+    justify-self: start;
+    margin-left: -2.5rem;
+    text-align: center;
+}
+.match-area-before h2{
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+}
+
+.match-area-before .my-pick{
+    grid-area: my-pick;
+    justify-self: end;
+    background-repeat: no-repeat;
+    background-color: white;
+    height: 20rem;
+    width: 20rem;
+    background-size: 8rem 10rem;
+    background-position: top 55% left 50%;
+    border-width: 3rem;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.match-area-before .house-pick{
+    grid-area: house-pick;
+    justify-self: start;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    background-color: black;
+    opacity: .1;
+}

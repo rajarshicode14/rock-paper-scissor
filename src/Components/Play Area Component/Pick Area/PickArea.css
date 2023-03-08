@@ -1,0 +1,60 @@
+.play-area{
+    display: grid;
+    grid-template-areas: 'paper scissor'
+                            'rock rock';
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 50%;
+    height: fit-content;
+    justify-items: center;
+    column-gap: 9rem;
+    row-gap: 3rem;
+    background-image: url(../../../images/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: top 55% left 50%;
+}
+.rock{
+    grid-area: rock;
+    background-image: url(../../../images/icon-rock.svg);
+    font-size: large;
+    background-repeat: no-repeat; 
+    background-size: 6rem 6rem;
+    background-color: white;
+    height: 14rem;
+    width: 14rem;
+    background-position: top 50% left 50%;
+    align-self: start;
+    border: 2.5rem solid hsl(349, 70%, 56%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.paper{
+    grid-area: paper;
+    background-image: url(../../../images/icon-paper.svg);
+    background-repeat: no-repeat;
+    background-size: 6.5rem 8rem;
+    background-color: white;
+    height: 14rem;
+    width: 14rem;
+    background-position: top 50% left 50%;
+    justify-self: right;
+    align-self: end;
+    border: 2.5rem solid hsl(230, 89%, 65%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.scissor{
+    grid-area: scissor;
+    background-image: url(../../../images/icon-scissors.svg);
+    background-repeat: no-repeat;
+    background-size: 6.5rem 8rem;
+    background-color: white;
+    height: 14rem;
+    width: 14rem;
+    background-position: top 50% left 50%;
+    justify-self: left;
+    align-self: end;
+    border: 2.5rem solid hsl(40, 84%, 53%);
+    border-radius: 50%;
+    cursor: pointer;
+}

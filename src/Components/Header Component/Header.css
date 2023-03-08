@@ -1,0 +1,15 @@
+.header-container{
+    box-sizing: border-box;
+    border: .3rem solid hsl(217, 16%, 45%);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2rem;
+    width: 50%;
+    margin: auto;
+    align-self: end;
+}
+.header-container img{
+    cursor: pointer;
+}

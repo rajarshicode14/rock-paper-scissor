@@ -1,0 +1,85 @@
+.result-area{
+    width: 100vw;
+    height: max-content;
+    display: grid;
+    grid-template-areas: 'header-left middle-bar header-right'
+                        'my-pick middle-bar house-pick';
+    grid-template-columns: 1fr minmax(min-content, max-content) 1fr;
+    grid-template-rows: 1.5rem 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 6rem;
+    margin-top: -3rem;
+}
+.result-area h2:nth-of-type(1){
+    grid-area: header-left;
+    color: white;
+    justify-self: end;
+    margin-right: 6rem;
+}
+.result-area h2:nth-of-type(2){
+    grid-area: header-right;
+    color: white;
+    justify-self: start;
+    margin-left: 1.5rem;
+}
+.result-area h2{
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+}
+.display-result{
+    grid-area: middle-bar;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.display-result h1{
+    font-size: 5rem;
+    color: white;
+}
+.display-result input{
+    padding: 1.2rem 5rem;
+    color: hsl(229, 25%, 31%);
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.display-result input:hover{
+    color: hsl(349, 70%, 56%);
+}
+
+.result-area .my-pick{
+    grid-area: my-pick;
+    justify-self: end;
+    background-image: url(../../../images/icon-scissors.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    height: 20rem;
+    width: 20rem;
+    background-size: 8rem 10rem;
+    background-position: top 55% left 50%;
+    border: 3rem solid hsl(40, 84%, 53%);
+    border-radius: 50%;
+    position: relative;
+}
+.result-area .house-pick{
+    grid-area: house-pick;
+    justify-self: start;
+    background-image: url(../../../images/icon-rock.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    background-size: 8rem 10rem;
+    background-position: top 55% left 50%;
+    border: 3rem solid hsl(349, 70%, 56%);
+    position: relative;
+}
+

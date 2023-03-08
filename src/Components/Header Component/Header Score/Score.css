@@ -1,0 +1,26 @@
+.score{
+    display: inline-flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0rem 4.5rem;
+    border-radius: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+.score > h4{
+    height: fit-content;
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: hsl(229, 64%, 46%);
+    margin-top: 1rem;
+    box-sizing: border-box;
+}
+.score > h2{
+    font-size: 6rem;
+    margin-top: -2.5rem;
+    margin-bottom: .7rem;
+    box-sizing: border-box;
+    color: hsl(229, 25%, 31%);
+}

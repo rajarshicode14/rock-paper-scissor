@@ -1,0 +1,206 @@
+:root{
+    font-size: 62.5%;
+
+    /* Primary Colors*/
+    --Scissors-Gradient: hsl(39, 89%, 49%), hsl(40, 84%, 53%);
+    --Paper-Gradient: hsl(230, 89%, 62%), hsl(230, 89%, 65%);
+    --Rock-Gradient: hsl(349, 71%, 52%), hsl(349, 70%, 56%);
+    --Lizard-Gradient: hsl(261, 73%, 60%), hsl(261, 72%, 63%);
+    --Cyan: hsl(189, 59%, 53%), hsl(189, 58%, 57%);
+
+    /* Neutral Colors*/
+    --Dark-Text: hsl(229, 25%, 31%);
+    --Score-Text: hsl(229, 64%, 46%);
+    --Header-Outline: hsl(217, 16%, 45%);
+
+    /* Background Colors*/
+    --Radial-Gradient: hsl(214, 47%, 23%), hsl(237, 49%, 15%);
+
+    /* Fonts */
+    font-family: "Barlow Semi Condensed";
+    --Weight-600 : 600;
+    --Weight-700 : 700;
+
+    box-sizing: border-box;
+    position: relative;
+}
+
+body{
+    background-image: linear-gradient(var(--Radial-Gradient));
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin:  0px;
+    padding: 0px;
+    /* overflow: hidden; */
+    overflow-y: hidden;
+}
+body div{
+    margin: 0rem;
+    padding: 0rem;
+}
+body div .main-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 70vh;
+    justify-items: center;
+    align-items: center;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+/* Media Queries */
+
+/* @media (max-width: 1130px){
+    .header-container{
+        width: 80%;
+    }
+    .match-area-after .my-pick, .match-area-after .house-pick{
+        height: 17rem;
+        width: 17rem;
+    }
+}
+
+@media (max-width: 950px){
+    :root{
+        font-size: 50%;
+    }
+    body div .main-content{
+        grid-template-columns: 100vw;
+    }
+    .header-container{
+        width: 70%;
+    }
+    .play-area{
+        width: 70%;
+    }
+    .match-area-before{
+        width: 50%;
+        margin: auto;
+    }
+    .score > h4{
+        padding-bottom: 1rem;
+    }
+    
+}
+
+@media (max-width: 924px){
+    .match-area-before{
+        width: 60%;
+        margin: auto;
+    }
+}
+@media (max-width: 820px){
+    .match-area-before{
+        width: 65%;
+        margin: auto;
+    }
+}
+@media (max-width: 750px){
+    .match-area-before{
+        width: 70%;
+        margin: auto;
+    }
+    .match-area-after .my-pick, .match-area-after .house-pick{
+        height: 14rem;
+        width: 14rem;
+    }
+}
+
+@media (max-width: 670px){
+    :root{
+        font-size: 50%;
+    }
+    body div .main-content{
+        grid-template-columns: 100vw;
+    }
+    .header-container{
+        width: 85%;
+        margin: auto;
+    }
+    .play-area{
+        width: 85%;
+        background-size: 28rem 28rem;
+    }
+    .score > h4{
+        padding-bottom: 1rem;
+    }
+    .match-area-before{
+        width: 80%;
+        margin: auto;
+    }
+    .match-area-after{
+        width: 70%;
+    }
+    .match-area-after .my-pick, .match-area-after .house-pick{
+        height: 14rem;
+        width: 14rem;
+    }
+}   
+
+@media (max-width: 670px){
+    .match-area-before{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media (max-width: 566px){
+    .match-area-before{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media (max-width: 510px){
+    .match-area-before{
+        width: 90%;
+        margin: auto;
+    }
+    .match-area-before .my-pick{
+        height: 15rem;
+        width: 15rem;
+    }
+}
+@media (max-width: 480px){
+    :root{
+        font-size: 45%;
+    }
+    body div .main-content{
+        grid-template-columns: 100vw;
+    }
+    .header-container{
+        width: 90%;
+        margin: auto;
+    }
+    .play-area{
+        width: 80%;
+        margin: auto;
+    }
+    .score > h4{
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 430px){
+    :root{
+        font-size: 35%;
+    }
+    body div .main-content{
+        grid-template-columns: 100vw;
+    }
+    .header-container{
+        width: 95%;
+        margin: auto;
+    }
+    .header-container img{
+        width: 20rem;
+    }
+    .play-area{
+        width: 85%;
+        margin: auto;
+    }
+    .score > h2{
+        padding-bottom: 3rem;
+    }
+    .score > h4{
+        padding-top: 2rem;
+    }
+} */
