@@ -13,24 +13,24 @@ import { Link } from "react-router-dom";
 function ResultPage({selected, score, setScore, userWin, setUserWin, compWin, setCompWin, message, setMessage}){
 
     function getOpponentImage(){
-        if (selected[1] == "R") {
+        if (selected[1] === "R") {
             return `url(${rock})`;
         }
-        if (selected[1] == "P") {
+        if (selected[1] === "P") {
             return `url(${paper})`;
         }
-        if (selected[1] == "S") {
+        if (selected[1] === "S") {
             return `url(${scissor})`;
         }
     }
     function getOpponentBorderColor(){
-        if (selected[1] == "R") {
+        if (selected[1] === "R") {
             return "hsl(349, 70%, 56%)";
         }
-        if (selected[1] == "P") {
+        if (selected[1] === "P") {
             return "hsl(230, 89%, 65%)";
         }
-        if (selected[1] == "S") {
+        if (selected[1] === "S") {
             return "hsl(40, 84%, 53%)";
         }
     }
@@ -38,24 +38,24 @@ function ResultPage({selected, score, setScore, userWin, setUserWin, compWin, se
 
 
     function getMyImage(){
-        if (selected[0] == "R") {
+        if (selected[0] === "R") {
             return `url(${rock})`;
         }
-        if (selected[0] == "P") {
+        if (selected[0] === "P") {
             return `url(${paper})`;
         }
-        if (selected[0] == "S") {
+        if (selected[0] === "S") {
             return `url(${scissor})`;
         }
     }
     function getMyBorderColor(){
-        if (selected[0] == "R") {
+        if (selected[0] === "R") {
             return "hsl(349, 70%, 56%)";
         }
-        if (selected[0] == "P") {
+        if (selected[0] === "P") {
             return "hsl(230, 89%, 65%)";
         }
-        if (selected[0] == "S") {
+        if (selected[0] === "S") {
             return "hsl(40, 84%, 53%)";
         }
     }
@@ -64,26 +64,26 @@ function ResultPage({selected, score, setScore, userWin, setUserWin, compWin, se
     useEffect(() => {
 
         // Draw Condition
-        if (selected[1] == selected[0]) {
+        if (selected[1] === selected[0]) {
             setMessage("DRAW");
             setUserWin(false);
             setCompWin(false);
         }
 
         // User Win
-        else if (selected[1] == 'R' && selected[0] == 'P') {
+        else if (selected[1] === 'R' && selected[0] === 'P') {
             setMessage("YOU WIN");
             setUserWin(true);
             setCompWin(false);
             setScore(score + 1);
         }
-        else if (selected[1] == 'P' && selected[0] == 'S') {
+        else if (selected[1] === 'P' && selected[0] === 'S') {
             setMessage("YOU WIN");
             setUserWin(true);
             setCompWin(false);      
             setScore(score + 1);
         }
-        else if (selected[1] == 'S' && selected[0] == 'R') {
+        else if (selected[1] === 'S' && selected[0] === 'R') {
             setMessage("YOU WIN");
             setUserWin(true);
             setCompWin(false);
@@ -92,17 +92,17 @@ function ResultPage({selected, score, setScore, userWin, setUserWin, compWin, se
 
 
         // Computer Win
-        else if (selected[1] == 'P' && selected[0] == 'R') {
+        else if (selected[1] === 'P' && selected[0] === 'R') {
             setMessage("YOU LOSE");
             setUserWin(false);
             setCompWin(true);
         }
-        else if (selected[1] == 'S' && selected[0] == 'P') {
+        else if (selected[1] === 'S' && selected[0] === 'P') {
             setMessage("YOU LOSE");
             setUserWin(false);
             setCompWin(true);
         }
-        else if (selected[1] == 'R' && selected[0] == 'S') {
+        else if (selected[1] === 'R' && selected[0] === 'S') {
             setMessage("YOU LOSE");
             setUserWin(false);
             setCompWin(true);

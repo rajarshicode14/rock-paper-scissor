@@ -13,24 +13,24 @@ function MatchAreaAfter({selected}){
     let navigate = useNavigate();
 
     function getOpponentImage(){
-        if (selected[1] == "R") {
+        if (selected[1] === "R") {
             return `url(${rock})`;
         }
-        if (selected[1] == "P") {
+        if (selected[1] === "P") {
             return `url(${paper})`;
         }
-        if (selected[1] == "S") {
+        if (selected[1] === "S") {
             return `url(${scissor})`;
         }
     }
     function getOpponentBorderColor(){
-        if (selected[1] == "R") {
+        if (selected[1] === "R") {
             return "hsl(349, 70%, 56%)";
         }
-        if (selected[1] == "P") {
+        if (selected[1] === "P") {
             return "hsl(230, 89%, 65%)";
         }
-        if (selected[1] == "S") {
+        if (selected[1] === "S") {
             return "hsl(40, 84%, 53%)";
         }
     }
@@ -38,24 +38,24 @@ function MatchAreaAfter({selected}){
 
 
     function getMyImage(){
-        if (selected[0] == "R") {
+        if (selected[0] === "R") {
             return `url(${rock})`;
         }
-        if (selected[0] == "P") {
+        if (selected[0] === "P") {
             return `url(${paper})`;
         }
-        if (selected[0] == "S") {
+        if (selected[0] === "S") {
             return `url(${scissor})`;
         }
     }
     function getMyBorderColor(){
-        if (selected[0] == "R") {
+        if (selected[0] === "R") {
             return "hsl(349, 70%, 56%)";
         }
-        if (selected[0] == "P") {
+        if (selected[0] === "P") {
             return "hsl(230, 89%, 65%)";
         }
-        if (selected[0] == "S") {
+        if (selected[0] === "S") {
             return "hsl(40, 84%, 53%)";
         }
     }
